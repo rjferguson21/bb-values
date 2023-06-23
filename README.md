@@ -1,0 +1,1 @@
+This zarf.yaml fails package create unless you add a file `child-values.yaml` at the parent package root OR update the reference in the `child/zarf.yaml` to refer to `child-values.yaml` as `child/child-values.yaml`
