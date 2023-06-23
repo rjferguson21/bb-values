@@ -1,0 +1,17 @@
+kind: ZarfPackageConfig
+metadata:
+  name: parent-bigbang
+  description: "An opinionated distribution of the Defense Unicorn Big Bang Distro (DUBBD) with SSO enabled by default"
+  version: 0.1
+  architecture: amd64 
+components:
+  - name: bigbang
+    required: true
+    import:
+      path: ./child
+      name: bigbang
+    extensions:
+      bigbang:
+        version: "###ZARF_PKG_TMPL_BIGBANG_VERSION###"
+        valuesFiles:
+        - parent-values.yaml

@@ -1,0 +1,6 @@
+package:
+  create:
+    max_package_size: "1000000000"
+    set:
+      bigbang_version: "2.3.0"
+      flux_version: "0.41.2"
